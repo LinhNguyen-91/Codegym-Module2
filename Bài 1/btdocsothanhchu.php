@@ -54,6 +54,9 @@
                     if ($hangDonVi == 0) {
                         $cacChuSo[$hangDonVi] = '';
                     }
+                    if ($hangDonVi == 5) {
+                        $cacChuSo[$hangDonVi] = 'lăm';
+                    }
                     if ($hangDonVi == 1) {
                         $cacChuSo[$hangDonVi] = 'mốt';
                     }
@@ -66,6 +69,7 @@
                     $hangTram = (floor($docSo / 100));
                     $layDu = $docSo % 100;
                     $hangChuc = (floor($layDu / 10));
+
                     $hangDonVi = $layDu % 10;
 
                     if ($hangDonVi == 0) {
@@ -75,10 +79,13 @@
                     if ($hangDonVi == 1) {
                         $cacChuSo[$hangDonVi] = 'mốt';
                     }
+                    if ($hangDonVi == 5) {
+                        $cacChuSo[$hangDonVi] = 'lăm';
+                    }
                     if ($hangChuc != 0) {
                         $ketQua = $cacChuSo[$hangTram] . ' ' . 'trăm' . ' ' . $cacChuSo[$hangChuc] . ' ' . 'mươi' . ' ' . $cacChuSo[$hangDonVi];
                     }else{
-                        $ketQua = $cacChuSo[$hangTram] . ' ' . 'trăm' . ' ' . $cacChuSo[$hangChuc] . ' ' . $$cacChuSo[$hangDonVi];
+                        $ketQua = $cacChuSo[$hangTram] . ' ' . 'trăm' . ' ' .'lẻ' . ' ' . $cacChuSo[$hangDonVi];
                     }
                 }
 
@@ -90,5 +97,4 @@
         }
         ?>
 </body>
-
 </html>
