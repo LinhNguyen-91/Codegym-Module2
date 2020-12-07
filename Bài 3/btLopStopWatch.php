@@ -56,7 +56,7 @@ function sapXepChon($mang)
         $minIndex = $i;
         $min = $mang[$i];
         for ($j = $i + 1; $j < count($mang); $j++) {
-            if ($min > $mang[$i]) {
+            if ($min > $mang[$j]) {
                 $minIndex = $j;
                 $min = $mang[$j];
             }
