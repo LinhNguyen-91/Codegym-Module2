@@ -17,7 +17,7 @@ function kiemTraDauNgoac($bieuThuc){
         }
     }
 
-    return !$dauNgoac->isEmpty();
+    return $dauNgoac->isEmpty();
 }
 
 echo kiemTraDauNgoac('s * (s – a) * ((s – b) * (s – c) ') ? 'đúng':'sai';
